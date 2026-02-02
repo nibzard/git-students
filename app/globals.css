@@ -1,0 +1,150 @@
+:root {
+  color-scheme: light;
+  font-family: "Georgia", "Times New Roman", serif;
+  background: #f5f6f8;
+  color: #111214;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #f7f9fb 0%, #eef2f6 100%);
+}
+
+main {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 32px 20px 64px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+h1 {
+  font-size: 32px;
+  margin: 0;
+  letter-spacing: 0.4px;
+}
+
+h2 {
+  margin: 8px 0 0;
+  font-size: 22px;
+  color: #121417;
+}
+
+p {
+  margin: 0;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(16, 24, 40, 0.12);
+  padding: 24px;
+  border: 1px solid #e3e8ef;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+input[type="email"] {
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #b7c0cc;
+  font-size: 16px;
+  color: #111214;
+  background: #ffffff;
+}
+
+button {
+  background: #0f172a;
+  color: #ffffff;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.timer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 12px;
+  color: #3a4756;
+}
+
+.options {
+  display: grid;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.option {
+  border: 1px solid #c8d1dc;
+  border-radius: 10px;
+  padding: 14px 16px;
+  background: #f8fafc;
+  cursor: pointer;
+  text-align: left;
+  color: #111214;
+  font-weight: 600;
+}
+
+.option.selected {
+  border-color: #0f172a;
+  background: #e2e8f0;
+}
+
+a.option {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.footer-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.result-list {
+  margin-top: 16px;
+  padding-left: 18px;
+}
+
+.notice {
+  background: #fff4e5;
+  border-left: 4px solid #b45309;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #3b2b16;
+}
+
+@media (max-width: 640px) {
+  h1 {
+    font-size: 26px;
+  }
+
+  .footer-actions {
+    flex-direction: column;
+  }
+}
