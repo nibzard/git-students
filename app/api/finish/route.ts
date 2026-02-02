@@ -115,7 +115,7 @@ export async function POST(request: Request) {
     totalTimeMs,
     incorrect,
     grade: gradesById.get(sessionId) ?? null,
-    leaderboard: leaderboardWithControl.slice(0, 10),
+    leaderboard: leaderboardWithControl,
     controlTotal: controlQuestionIds.length,
   });
 }

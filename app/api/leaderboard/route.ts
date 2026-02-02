@@ -50,7 +50,7 @@ export async function GET(request: Request) {
 
   return NextResponse.json({
     grade,
-    leaderboard: leaderboardWithControl.slice(0, 10),
+    leaderboard: leaderboardWithControl,
     controlTotal: controlQuestionIds.length,
   });
 }
